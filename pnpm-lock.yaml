@@ -9,6 +9,7 @@ specifiers:
   '@storybook/addon-interactions': ^6.4.19
   '@storybook/addon-links': ^6.4.19
   '@storybook/builder-webpack5': ^6.4.19
+  '@storybook/jest': ^0.0.9
   '@storybook/manager-webpack5': ^6.4.19
   '@storybook/react': ^6.4.19
   '@storybook/testing-library': ^0.0.9
@@ -45,6 +46,7 @@ devDependencies:
   '@storybook/addon-interactions': 6.5.3_qvz2jqp3nspiw7f4r6w4jnbyfy
   '@storybook/addon-links': 6.5.3_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/builder-webpack5': 6.5.3_k374m6cxqcfzdt2m4ril2g3g2y
+  '@storybook/jest': 0.0.9_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/manager-webpack5': 6.5.3_k374m6cxqcfzdt2m4ril2g3g2y
   '@storybook/react': 6.5.3_u6w3d3oqy4r5qb3b7ru76mmlia
   '@storybook/testing-library': 0.0.9_sfoxds7t5ydpegc3knd667wn6m
@@ -3288,6 +3290,12 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/expect/27.5.2-0:
+    resolution: {integrity: sha512-cP99mhWN/JeCp7VSIiymvj5tmuMY050iFohvp8Zq+kewKsBSZ6/qpTJAGCCZk6pneTcp4S0Fm5BSqyxzbyJ3gw==}
+    dependencies:
+      '@types/jest': 27.5.1
+    dev: true
+
   /@storybook/instrumenter/6.5.3_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-Dh7EjqbhKowFlmfBLdgq0OTBgm3HQbhzs82q9oM2sCcXJJyjlYSdne/JDuWY2NDGV30aiwqvCGkvr/w1OUh/xg==}
     dependencies:
@@ -3296,6 +3304,18 @@ packages:
       '@storybook/core-events': 6.5.3
       core-js: 3.22.5
       global: 4.4.0
+    transitivePeerDependencies:
+      - react
+      - react-dom
+    dev: true
+
+  /@storybook/jest/0.0.9_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-ilk9x+yem/w2VfvfCKtpJg+/4p53l4mu+sVDbEt0FOcUuEzcuzO+tJO6c98ccgGaiJ4Xq1pQK2BN3hQ62HJqog==}
+    dependencies:
+      '@storybook/expect': 27.5.2-0
+      '@storybook/instrumenter': 6.5.3_sfoxds7t5ydpegc3knd667wn6m
+      '@testing-library/jest-dom': 5.16.4
+      jest-mock: 27.5.1
     transitivePeerDependencies:
       - react
       - react-dom

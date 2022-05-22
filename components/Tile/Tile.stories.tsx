@@ -11,6 +11,7 @@ export default {
 
 export const BasicTile: ComponentStoryObj<typeof Tile> = {
   play: async () => {
+    //@ts-ignore
     await expect(screen.getByRole("heading")).toBeInTheDocument();
   },
   args: {

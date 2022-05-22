@@ -10,10 +10,6 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s ./public"
   },
-  "engines": {
-    "hnvm": "16.15.0",
-    "pnpm": "7.1.0"
-  },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",

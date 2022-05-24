@@ -1,5 +1,14 @@
 # Courses-App
 
 > next.js + storybook + strapi
->
-> `env HNVM_NODE='16.15.0' pnpm i`
+
+## Notes
+
+### Custom hook useId
+
+```ts
+export const useId = (): string => {
+  const { current } = useRef(Math.random().toString(16).slice(2));
+  return current;
+};
+```

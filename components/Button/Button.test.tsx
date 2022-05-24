@@ -1,4 +1,3 @@
-import React from "react";
 import userEvent from "@testing-library/user-event";
 
 import { render, screen } from "@/test-utils";
@@ -12,7 +11,6 @@ describe("Button test cases", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-
   it("Check onClick callback", () => {
     const onClick = jest.fn();
 

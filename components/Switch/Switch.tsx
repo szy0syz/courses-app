@@ -1,21 +1,9 @@
-# Courses-App
+import { FC, ChangeEvent } from "react";
+import styled from "@emotion/styled";
 
-> next.js + storybook + strapi
+import { boxShadow, transition } from "@/components/styles";
+import { useId } from "@/components/hooks/useId";
 
-## Notes
-
-### Custom hook useId
-
-```ts
-export const useId = (): string => {
-  const { current } = useRef(Math.random().toString(16).slice(2));
-  return current;
-};
-```
-
-### Switch component
-
-```ts
 const Wrapper = styled.label`
   & input {
     display: none;
@@ -54,4 +42,18 @@ const VisiblePart = styled.label`
     ${transition()};
   }
 `;
-```
+
+type Props = {
+  /** onChange callback */
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+};
+
+export const Switch: FC<Props> = ({ onChange }) => {
+  const fieldId = useId();
+  return (
+    <Wrapper>
+      <input id={fieldId} type="checkbox" onChange={onChange} />
+      <VisiblePart htmlFor={fieldId} data-testid="SwitchVisiblePart" />
+    </Wrapper>
+  );
+};

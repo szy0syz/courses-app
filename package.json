@@ -9,7 +9,7 @@
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --updateSnapshot",
+    "test": "jest",
     "test.changed": "jest --onlyChanged --updateSnapshot",
     "chromatic": "npx chromatic --project-token=b19f5a8c9c61"
   },
@@ -34,6 +34,7 @@
     "@storybook/addon-a11y": "^6.4.19",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
+    "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.1",
     "@types/node": "17.0.21",

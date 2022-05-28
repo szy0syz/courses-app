@@ -22,7 +22,6 @@ ValidFeedback.args = {
 
 export const InvalidFeedback: ComponentStoryObj<typeof Feedback> = {
   play: async () => {
-
     await expect(
       screen.getByText("Please provide a valid value")
       //@ts-ignore

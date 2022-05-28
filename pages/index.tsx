@@ -1,8 +1,8 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import styled from '@emotion/styled';
+import type { NextPage } from "next";
+import Head from "next/head";
+import styled from "@emotion/styled";
 
-import { Course } from '@/components/Course';
+import { Course } from "@/components/Course";
 
 const CoursesWrapper = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <CoursesWrapper>
         {Array(4)
-          .fill('')
+          .fill("")
           .map(() => (
             <Course
               key={Math.random()}
@@ -30,8 +30,8 @@ const Home: NextPage = () => {
               imageProps={{
                 width: 1368,
                 height: 770,
-                alt: 'Logo for Hands-On React',
-                src: '/covers/hands-on_reactjs_cover.png',
+                alt: "Logo for Hands-On React",
+                src: "/covers/hands-on_reactjs_cover.png",
               }}
             >
               <>

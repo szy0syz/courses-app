@@ -9,7 +9,7 @@
     "lint": "next lint --no-cache",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --updateSnapshot",
+    "test": "jest",
     "test.changed": "jest --onlyChanged --updateSnapshot",
     "chromatic": "npx chromatic --project-token=b19f5a8c9c61"
   },

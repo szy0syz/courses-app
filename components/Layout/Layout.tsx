@@ -1,11 +1,11 @@
-import { FC } from "react";
-import Link from "next/link";
-import styled from "@emotion/styled";
+import { FC } from 'react';
+import Link from 'next/link';
+import styled from '@emotion/styled';
 
-import { Logo } from "@/components/Logo";
-import { Input } from "@/components/Input";
-import { IconButton } from "@/components/IconButton";
-import { StyledLink } from "@/components/StyledLink";
+import { Logo } from '@/components/Logo';
+import { Input } from '@/components/Input';
+import { IconButton } from '@/components/IconButton';
+import { StyledLink } from '@/components/StyledLink';
 
 const Wrapper = styled.div`
   display: grid;
@@ -14,10 +14,10 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.background};
   padding: 0.5rem;
   grid-template-areas:
-    "header  nav"
-    "search  search"
-    "content content"
-    "footer  footer";
+    'header  nav'
+    'search  search'
+    'content content'
+    'footer  footer';
   nav {
     flex-direction: row;
     justify-content: flex-end;
@@ -29,9 +29,9 @@ const Wrapper = styled.div`
   @media (min-width: 960px) {
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-areas:
-      "header  search  nav"
-      "content content content"
-      "footer  footer  footer";
+      'header  search  nav'
+      'content content content'
+      'footer  footer  footer';
   }
 `;
 
@@ -64,13 +64,6 @@ const MainNav = styled.nav`
   justify-content: space-around;
   align-items: center;
   margin: 0 2vmin;
-  a {
-    cursor: pointer;
-    color: ${({ theme }) => theme.font.regular};
-    &:hover {
-      opacity: 0.7;
-    }
-  }
 `;
 
 const SearchInput = styled(Input)`
@@ -108,10 +101,14 @@ export const Layout: FC<Props> = ({ children, isDark, onThemeToggle }) => (
       </LogoLink>
     </Link>
     <MainNav>
-      <Link href="/all">All</Link>
-      <Link href="/news">News</Link>
+      <Link href="/all" passHref>
+        <StyledLink>All</StyledLink>
+      </Link>
+      <Link href="/news" passHref>
+        <StyledLink>News</StyledLink>
+      </Link>
       <IconButton
-        name={isDark ? "Moon" : "Sun"}
+        name={isDark ? 'Moon' : 'Sun'}
         size={1}
         onClick={onThemeToggle}
       />

@@ -41,7 +41,7 @@ exports[`Layout test cases Render check 1`] = `
         News
       </a>
       <button
-        class="css-1kvhab4"
+        class="css-15xqhy1"
         title="Moon"
       >
         <svg
@@ -97,6 +97,7 @@ exports[`Layout test cases Render check 1`] = `
       </div>
       <span
         class="css-1reg724"
+        role="alert"
       />
     </label>
     <main

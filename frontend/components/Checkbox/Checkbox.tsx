@@ -44,7 +44,6 @@ type Props = {
 
 export const Checkbox: FC<Props> = ({ onChange }) => {
   const fieldId = useId();
-
   return (
     <Wrapper>
       <input id={fieldId} type="checkbox" onChange={onChange} />

@@ -11,7 +11,6 @@ export default {
 
 export const ValidFeedback: ComponentStoryObj<typeof Feedback> = {
   play: async () => {
-    //@ts-ignore
     await expect(screen.getByText("Looks good!")).toBeInTheDocument();
   },
 };
@@ -24,7 +23,6 @@ export const InvalidFeedback: ComponentStoryObj<typeof Feedback> = {
   play: async () => {
     await expect(
       screen.getByText("Please provide a valid value")
-      //@ts-ignore
     ).toBeInTheDocument();
   },
 };

@@ -13,7 +13,7 @@ const Section = styled.section`
 `;
 
 export type Props = {
-  /** Header string */
+  /** Header */
   header: ReactChild;
 };
 

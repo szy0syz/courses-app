@@ -60,3 +60,4 @@ const VisiblePart = styled.label`
 
 ![001](https://user-images.githubusercontent.com/10555820/170835220-8c55f44c-ce1e-4948-b036-6994ea2e5fb7.png)
 
+<img width="921" alt="002" src="https://user-images.githubusercontent.com/10555820/170926153-ee88f859-fc8a-4444-93f4-07837b120664.png">

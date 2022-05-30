@@ -35,6 +35,7 @@ specifiers:
   prettier: 2.5.1
   react: 17.0.2
   react-dom: 17.0.2
+  react-hook-form: ^7.30.0
   tsconfig-paths-webpack-plugin: ^3.5.2
   typescript: 4.6.2
 
@@ -44,6 +45,7 @@ dependencies:
   next: 12.1.0_cejl76k2qxbp2ab75jaaojpzhe
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-hook-form: 7.31.3_react@17.0.2
 
 devDependencies:
   '@babel/core': 7.18.0
@@ -9233,7 +9235,7 @@ packages:
     dev: true
 
   /js-string-escape/1.0.1:
-    resolution: {integrity: sha1-4mJbrbwNZ8dTPp7cEGjFh65BN+8=}
+    resolution: {integrity: sha512-Smw4xcfIQ5LVjAOuJCvN/zIodzA/BBSsluuoSykP+lUvScIi4U6RJLfwHet5cxFnCswUjISV8oAXaqaJDY3chg==}
     engines: {node: '>= 0.8'}
     dev: true
 
@@ -11172,6 +11174,15 @@ packages:
       '@babel/runtime': 7.18.0
       react: 17.0.2
     dev: true
+
+  /react-hook-form/7.31.3_react@17.0.2:
+    resolution: {integrity: sha512-NVZdCWViIWXXXlQ3jxVQH0NuNfwPf8A/0KvuCxrM9qxtP1qYosfR2ZudarziFrVOC7eTUbWbm1T4OyYCwv9oSQ==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 17.0.2
+    dev: false
 
   /react-inspector/5.1.1_react@17.0.2:
     resolution: {integrity: sha512-GURDaYzoLbW8pMGXwYPDBIv6nqei4kK7LPRZ9q9HCZF54wqXz/dnylBp/kfE9XmekBhHvLDdcYeyIwSrvtOiWg==}

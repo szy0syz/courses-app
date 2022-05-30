@@ -14,12 +14,12 @@ jobs:
   chromatic-deployment:
     # Operating System
     runs-on: ubuntu-latest
-    # Job steps
-    
+
     defaults:
       run:
         working-directory: ./frontend
-
+        
+    # Job steps
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2

@@ -18,13 +18,17 @@ const Button = styled.button<ButtonProps>`
     height: ${size};
   `}
   border-radius: 50%;
+
   ${transition()};
+
   ${({ theme }) =>
     boxShadow(theme.components.shadow1, theme.components.shadow2)}
+
   &:active {
     ${({ theme }) =>
       boxShadow(theme.components.shadow1, theme.components.shadow2, true)}
   }
+
   &:hover {
     opacity: 0.9;
   }

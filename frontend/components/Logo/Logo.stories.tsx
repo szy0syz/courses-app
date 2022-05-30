@@ -11,7 +11,6 @@ export default {
 
 export const BasicLogo: ComponentStoryObj<typeof Logo> = {
   play: async () => {
-    // @ts-ignore
     await expect(screen.getByRole("banner")).toBeInTheDocument();
   },
   args: {
